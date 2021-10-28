@@ -1,0 +1,28 @@
+
+<button  type="button" class="btn btn primary" (click) = "show = !show">Productos</button>
+<br>
+<br>
+<div>
+    <table class="table table-dark" *ngIf = "show">
+        <thead>
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">categoria</th>
+                <th scope="col">Stock</th>
+                <th scope="col">proveedor</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let post of dataMiProyecto.productos">
+                <td>{{post.nombre}}</td>
+                <td>{{post.nombre}}</td>
+                <td>{{post.stock}}</td>
+                <td>{{post.proveedor.nombre}}</td>   
+            </tr>
+        </tbody>
+    </table>
+</div>
+<br>
+<br>
+<br>

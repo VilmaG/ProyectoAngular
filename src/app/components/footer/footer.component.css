@@ -1,0 +1,12 @@
+footer{
+    color: blue;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background: rgb(142, 221, 211);
+   
+}
+
+img{
+    margin-left: 20px;
+}

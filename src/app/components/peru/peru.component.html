@@ -1,0 +1,24 @@
+<button  type="button" class="btn btn primary" (click) = "show = !show">Perú Component</button>
+<br>
+<br>
+<div>
+    <table class="table table-dark" *ngIf = "show">
+        <thead>
+            <tr>
+                <th scope="col">código</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Capital</th>
+                <th scope="col">Continente</th>
+                <th scope="col">Lengua oficial</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let post of dataPeru">
+                <td>{{post.ccn3}}</td>
+                <td>{{post.name.official}}</td>
+                <td>{{post.capital}}</td>
+                <td>{{post.region}}</td>
+                <td>{{post.languages.spa}}</td>
+            </tr>
+        </tbody>
+    </table>

@@ -1,0 +1,23 @@
+
+<button  type="button" class="btn btn primary" (click) = "show = !show">País Component</button>
+<br>
+<br>
+<div>
+    <table class="table table-dark" *ngIf = "show">
+        <thead>
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Poblacion</th>
+                <th scope="col">continente</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let post of dataPaises">
+                <td>{{post.name.common}}</td>
+                <td>{{post.population}}</td>
+                <td>{{post.continents}}</td>   
+            </tr>
+        </tbody>
+    </table>
+</div>
